@@ -10,6 +10,7 @@ const AboutMe = () => {
     try {
       const data = await getProfileImage();
       setImage(data.avatar_url);
+      console.log("Image URL is", data.avatar_url);
     } catch (error) {
       console.error("Failed to fetch image", error);
     } finally {
@@ -52,12 +53,16 @@ const AboutMe = () => {
           <div className="flex items-center justify-center w-full h-full">
             <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-gray-300"></div>
           </div>
-        ) : (
+        ) : image ? (
           <img
             src={image}
             alt="Profile"
             className="w-full h-auto rounded-lg scale-75 lg:mt-28"
           />
+        ) : (
+          <div className="flex items-center justify-center w-full h-full text-red-500">
+            Unexpected Error
+          </div>
         )}
       </div>
     </div>

@@ -10,6 +10,7 @@ const Jokes = () => {
     try {
       const res = await getJokes();
       setJoke(res.text);
+      console.log("Joke is", res.text);
     } catch (error) {
       console.error("Failed to fetch joke:", error);
     } finally {
