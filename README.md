@@ -19,6 +19,12 @@ A personal developer portal built with **React**, **TypeScript**, and **Tailwind
 - **TypeScript** – Type-safe JavaScript for better developer experience
 - **Tailwind CSS** – Utility-first CSS framework for styling
 
+## 🌐 Live Demo
+
+This project is deployed on **Vercel**.  
+🔗 [View Live Site](https://personal-dev-portal.vercel.app)  
+
+
 ## 🧩 Project Structure (optional)
 
 ```bash
