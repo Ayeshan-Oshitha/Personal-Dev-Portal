@@ -11,7 +11,7 @@ const Navigation = () => {
       <div className="col-span-10 lg:col-span-9 w-full flex items-center justify-end gap-x-12 ">
         <NavLink to="/">About Me</NavLink>
         <NavLink to="/timer">Timer</NavLink>
-        <NavLink to="/jokes">Joke5</NavLink>
+        <NavLink to="/jokes">Jokes</NavLink>
       </div>
     </div>
   );

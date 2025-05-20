@@ -2,8 +2,8 @@ import React, { useEffect, useState } from "react";
 import { getProfileImage } from "../services/ProfileImage";
 
 const AboutMe = () => {
-  const [image, setImage] = useState();
-  const [loading, setLoading] = useState(false);
+  const [image, setImage] = useState<undefined | string>();
+  const [loading, setLoading] = useState<boolean>(false);
 
   const getImage = async () => {
     setLoading(true);
