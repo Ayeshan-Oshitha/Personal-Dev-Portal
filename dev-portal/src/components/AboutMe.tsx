@@ -22,22 +22,32 @@ const AboutMe = () => {
   }, []);
 
   return (
-    <div className="w-full grid grid-cols-12  gap-12  max-w-[1200px]">
-      <div className="col-span-8 mt-20">
+    <div className="w-full grid grid-cols-12  gap-4  max-w-[1200px]">
+      <div className="col-span-12 lg:col-span-8 mt-20 px-8 ">
         <div className="flex flex-col ">
           <p className="text-2xl mb-2">Hello, I'm </p>
           <p className="text-4xl ">Oshitha Costa</p>
         </div>
-        <div className="mt-12 w-full pr-24">
+        <div className="mt-12 w-full ">
           <p>
-            I'm a software engineer with a passion for creating innovative
-            solutions. I have experience in web development, mobile app
-            development, and cloud computing. I love learning new technologies
-            and applying them to real-world problems.
+            I’m a student at the University of Moratuwa, currently pursuing a
+            Bachelor of Science Honours in Information Technology.
+            <br />
+            <br />
+            I have experience working with programming languages such as Java,
+            JavaScript, TypeScript, C#, and Python. I'm also familiar with
+            frameworks and technologies like React, ASP.NET Core, and Spring
+            Boot.
+            <br />
+            <br />
+            I'm passionate about software development, mobile development, and
+            emerging technologies like Artificial Intelligence, AI agents, and
+            Machine Learning. I’m always eager to learn and apply new
+            technologies to solve real-world problems.
           </p>
         </div>
       </div>
-      <div className="col-span-4 mt-2">
+      <div className="col-span-12 lg:col-span-4 mt-2">
         {loading ? (
           <div className="flex items-center justify-center w-full h-full">
             <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-gray-300"></div>
@@ -46,7 +56,7 @@ const AboutMe = () => {
           <img
             src={image}
             alt="Profile"
-            className="w-full h-full rounded-lg scale-75"
+            className="w-full h-auto rounded-lg scale-75 lg:mt-28"
           />
         )}
       </div>
